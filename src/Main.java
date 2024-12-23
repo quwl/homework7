@@ -9,16 +9,12 @@ public class Main {
             System.out.println("Месяц " + month + " Сумма накоплений равна " + total + " рублей");
         }
         System.out.println("Задание 2");
-        int i = 1;
-        while (i <= 10) {
+        for (int i = 1; i <= 10; i++) {
             System.out.print(i + " ");
-            i++;
         }
         System.out.println();
-        i = 10;
-        while (i > 0) {
+        for (int i = 10; i > 0; i--) {
             System.out.print(i + " ");
-            i--;
         }
         System.out.println();
         System.out.println("Задание 3");
@@ -33,8 +29,10 @@ public class Main {
         System.out.println("Задание 4");
         int sum = 0;
         int mont = 0;
-        while (sum <= 12000000) {
-            sum += 15000 + (sum / 100) * 7;
+        int sumNeeded = 12000000;
+        int montPercent = 7;
+        while (sum <= sumNeeded) {
+            sum += 15000 + (sum / 100) * montPercent;
             mont++;
             System.out.println("Сумма накоплений " + sum + " Месяц " + mont);
         }
@@ -67,11 +65,11 @@ public class Main {
             friday += 7;
         }
         System.out.println("Задание 8");
-        int year = 0;
-        while (year <= 2124) {
-            year += 79;
-            if (2024 - year <= 200 && 2024 - year >= -100) {
-                System.out.println(year);
+        int yeaR = 0;
+        while (yeaR <= 2124) {
+            yeaR += 79;
+            if (2024 - yeaR <= 200 && 2024 - yeaR >= -100) {
+                System.out.println(yeaR);
 
             }
         }

@@ -9,12 +9,14 @@ public class Main {
             System.out.println("Месяц " + month + " Сумма накоплений равна " + total + " рублей");
         }
         System.out.println("Задание 2");
-        for (int i = 1; i <= 10; i++) {
+        int i = 1;
+        while (i <= 10) {
             System.out.print(i + " ");
+            i++;
         }
         System.out.println();
-        for (int i = 10; i > 0; i--) {
-            System.out.print(i + " ");
+        for (int z = 10; z > 0; z--) {
+            System.out.print(z + " ");
         }
         System.out.println();
         System.out.println("Задание 3");
@@ -65,11 +67,11 @@ public class Main {
             friday += 7;
         }
         System.out.println("Задание 8");
-        int yeaR = 0;
-        while (yeaR <= 2124) {
-            yeaR += 79;
-            if (2024 - yeaR <= 200 && 2024 - yeaR >= -100) {
-                System.out.println(yeaR);
+        int year = 0;
+        while (year <= 2124) {
+            year += 79;
+            if (2024 - year <= 200 && 2024 - year >= -100) {
+                System.out.println(year);
 
             }
         }

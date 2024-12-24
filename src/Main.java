@@ -23,8 +23,7 @@ public class Main {
         int population = 12000000;
         int years = 0;
         while (years < 10) {
-            population += (population / 1000) * 17;
-            population -= 8;
+            population += ((population / 1000) * 17) - 8;
             years++;
             System.out.println("Год " + years + " Численность населения составляет " + population);
         }

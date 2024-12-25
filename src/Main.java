@@ -22,8 +22,10 @@ public class Main {
         System.out.println("Задание 3");
         int population = 12000000;
         int years = 0;
+        int birth = (population / 1000) * 17;
+        int death = (population / 1000) * 8;
         while (years < 10) {
-            population += ((population / 1000) * 17) - 8;
+            population += birth - death;
             years++;
             System.out.println("Год " + years + " Численность населения составляет " + population);
         }
